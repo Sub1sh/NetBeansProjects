@@ -6,12 +6,17 @@
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
-    </head>
-    <body>
-        <h1>Hello World!</h1>
-    </body>
-</html>
+
+    <%! int day = 3; %> 
+    <html>
+   <head><title>IF...ELSE Example</title></head> 
+   
+   <body>
+      <% if (day == 1 || day == 7) { %>
+         <p> Today is weekend</p>
+      <% } else { %>
+         <p> Today is not weekend </p>
+      <% } %>
+   </body> 
+</html>>
+
